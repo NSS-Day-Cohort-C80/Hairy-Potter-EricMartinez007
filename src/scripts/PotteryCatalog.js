@@ -15,14 +15,4 @@ export const toSellOrNotToSell = (potteryObject) => {
     return potteryToBeSold
 }
 
-// export const catalog = () => {
-//     let potteryCatalogHTML = "<h1>Pottery Catalog</h1>"
-//     potteryToBeSold.forEach(potteryObject => {
-//         potteryCatalogHTML += `<section class="pottery">
-//         <h2>${potteryObject.shape}</h2>
-//         <div>Price: $${potteryObject.price}</div>
-//         </section>`
-//     })
-//     return potteryCatalogHTML
-// }
 
