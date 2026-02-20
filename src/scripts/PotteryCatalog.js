@@ -2,16 +2,15 @@ const potteryToBeSold = []
 
 export const toSellOrNotToSell = (potteryObject) => {
     if (potteryObject.cracked === true) {
+        potteryObject.price = 2.5
     }
-    if (potteryObject.weight >= 6) {
+    else if (potteryObject.weight >= 6) {
         potteryObject.price = 40
     }
     else if (potteryObject.weight < 6) {
         potteryObject.price = 20
     }
-    if (potteryObject.cracked === false) {
-        potteryToBeSold.push(potteryObject)
-    }
+    potteryToBeSold.push(potteryObject)
     return potteryToBeSold
 }
 
